@@ -1,0 +1,41 @@
+/*--------------------------------------------------------------
+## Site Wide Styling
+--------------------------------------------------------------*/
+
+@font-face {
+    font-family: 'Good Sans';
+    src: url('static/fonts/GoodSans-Regular.woff2') format('woff2'),
+        url('static/fonts/GoodSans-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Sainte Colombe';
+    src: url('static/fonts/SainteColombe-LightItalic.woff2') format('woff2'),
+        url('static/fonts/SainteColombe-LightItalic.woff') format('woff');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Sainte Colombe';
+    src: url('static/fonts/SainteColombe-Light.woff2') format('woff2'),
+        url('static/fonts/SainteColombe-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+
+body {
+	padding: 30px;
+	font-family: 'Good Sans';
+	font-weight: normal;
+	-webkit-font-smoothing: antialiased;	
+	font-size: 12px;
+	margin: 0px;
+}

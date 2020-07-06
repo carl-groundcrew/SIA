@@ -1,0 +1,47 @@
+/*--------------------------------------------------------------
+## Global Styling
+--------------------------------------------------------------*/
+.flex {
+	display: flex;
+}
+.flex-center {
+	align-items: center;
+}
+
+h1 {
+	font-weight: 100;
+	font-size: 72px;
+	margin: 0px;
+	font-family: 'Sainte Colombe';
+	@media(max-width: 768px) {
+		font-size: 40px;
+	}
+	span {
+		display: block;
+	}
+}
+
+.mla {
+	margin-left: auto;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+.mobile-hide {
+	@media(max-width: 768px) {
+		display: none;
+	}
+}
+
+img.lazy {
+	opacity: 0;
+}
+img:not(.initial) {
+	transition: opacity 0.2s;
+}
+img.initial, img.loaded, img.error {
+	opacity: 1;
+}

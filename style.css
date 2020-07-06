@@ -1,0 +1,124 @@
+/*--------------------------------------------------------------
+## Global Styling
+--------------------------------------------------------------*/
+.flex {
+  display: flex; }
+
+.flex-center {
+  align-items: center; }
+
+h1 {
+  font-weight: 100;
+  font-size: 72px;
+  margin: 0px;
+  font-family: 'Sainte Colombe'; }
+  @media (max-width: 768px) {
+    h1 {
+      font-size: 40px; } }
+  h1 span {
+    display: block; }
+
+.mla {
+  margin-left: auto; }
+
+a {
+  text-decoration: none;
+  color: inherit; }
+
+@media (max-width: 768px) {
+  .mobile-hide {
+    display: none; } }
+
+img.lazy {
+  opacity: 0; }
+
+img:not(.initial) {
+  transition: opacity 0.2s; }
+
+img.initial, img.loaded, img.error {
+  opacity: 1; }
+
+/*--------------------------------------------------------------
+## Site Wide Styling
+--------------------------------------------------------------*/
+@font-face {
+  font-family: 'Good Sans';
+  src: url("static/fonts/GoodSans-Regular.woff2") format("woff2"), url("static/fonts/GoodSans-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap; }
+
+@font-face {
+  font-family: 'Sainte Colombe';
+  src: url("static/fonts/SainteColombe-LightItalic.woff2") format("woff2"), url("static/fonts/SainteColombe-LightItalic.woff") format("woff");
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap; }
+
+@font-face {
+  font-family: 'Sainte Colombe';
+  src: url("static/fonts/SainteColombe-Light.woff2") format("woff2"), url("static/fonts/SainteColombe-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap; }
+
+body {
+  padding: 30px;
+  font-family: 'Good Sans';
+  font-weight: normal;
+  -webkit-font-smoothing: antialiased;
+  font-size: 12px;
+  margin: 0px; }
+
+/*--------------------------------------------------------------
+## Header Styling
+--------------------------------------------------------------*/
+header {
+  padding-bottom: 20px;
+  border-bottom: 1px solid #000;
+  height: 24px; }
+
+nav a {
+  line-height: 22px;
+  margin: 0px 20px;
+  text-transform: uppercase; }
+  @media (max-width: 768px) {
+    nav a {
+      margin-right: 0px; } }
+
+.preloader {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0px;
+  left: 0px;
+  padding: 30px; }
+  .preloader .logo {
+    width: calc(100% - 60px);
+    z-index: 2;
+    position: relative; }
+  .preloader .background {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: #b8b8ba;
+    top: 0px;
+    left: 0px;
+    z-index: 1; }
+    .preloader .background img {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0px;
+      left: 0px;
+      object-fit: cover;
+      object-position: center center; }
+
+/*--------------------------------------------------------------
+## Footer Styling
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+## Home Styling
+--------------------------------------------------------------*/
+.featured-banner {
+  height: calc(100vh - 105px); }
